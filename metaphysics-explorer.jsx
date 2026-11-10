@@ -3294,23 +3294,23 @@ html,body{background:#0b0b0d}
 ::highlight(mxcur){background:#d4a843;color:#0b0b0d}
 /* ── intro ── */
 .intro{position:fixed;inset:0;z-index:100;cursor:pointer;overflow:hidden}
-.ih{position:absolute;left:0;right:0;height:50.5%;background:#0b0b0d;transition:transform 1.1s cubic-bezier(.76,0,.24,1) .4s}
+.ih{position:absolute;left:0;right:0;height:50.5%;background:#0b0b0d;transition:transform 1s cubic-bezier(.76,0,.24,1) .25s}
 .ih.t{top:0}.ih.b{bottom:0}
 .intro.out .ih.t{transform:translateY(-101%)}.intro.out .ih.b{transform:translateY(101%)}
 .is{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;
   background:radial-gradient(ellipse at 50% 46%,rgba(212,168,67,.13),rgba(11,11,13,0) 58%);transition:opacity .55s ease}
 .intro.out .is{opacity:0}
 .ig{width:84px;height:84px;overflow:visible;filter:drop-shadow(0 0 16px rgba(212,168,67,.45))}
-.ig path,.ig line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.7s cubic-bezier(.5,0,.2,1) .25s forwards}
-.ig .roof{animation-delay:1.2s;animation-duration:1s}
-@keyframes draw{to{stroke-dashoffset:0}}
+.ig path,.ig line{stroke-dasharray:1;stroke-dashoffset:1;opacity:0;animation:draw 1.5s cubic-bezier(.5,0,.2,1) .2s forwards}
+.ig .roof{animation-delay:1s;animation-duration:.8s}
+@keyframes draw{0%{opacity:0}6%{opacity:1}100%{opacity:1;stroke-dashoffset:0}}
 .it{margin:30px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(30px,8vw,54px);line-height:1.15;color:#efe8d8;letter-spacing:1px}
 .it .w{display:inline-block;white-space:nowrap}
 .it .l{display:inline-block;opacity:0;transform:translateY(10px);filter:blur(8px);animation:letter 1s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes letter{to{opacity:1;transform:none;filter:blur(0)}}
-.ir{width:min(220px,50vw);height:1px;margin:24px 0 18px;background:linear-gradient(90deg,transparent,#d4a843,transparent);transform:scaleX(0);animation:rule 1.1s cubic-bezier(.5,0,.2,1) 2s forwards}
+.ir{width:min(220px,50vw);height:1px;margin:24px 0 18px;background:linear-gradient(90deg,transparent,#d4a843,transparent);transform:scaleX(0);animation:rule 1s cubic-bezier(.5,0,.2,1) 1.6s forwards}
 @keyframes rule{to{transform:scaleX(1)}}
-.isub{margin:0;font-family:'Literata',Georgia,serif;font-style:italic;font-size:13.5px;color:#9a937f;max-width:320px;line-height:1.7;opacity:0;animation:fade 1.2s ease 2.5s forwards}
+.isub{margin:0;font-family:'Literata',Georgia,serif;font-style:italic;font-size:13.5px;color:#9a937f;max-width:320px;line-height:1.7;opacity:0;animation:fade 1s ease 2s forwards}
 .iskip{position:absolute;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font-size:11.5px;color:#4f4b40;font-style:italic;opacity:0;animation:fade 1s ease 1.5s forwards;transition:opacity .4s}
 .intro.out .iskip{opacity:0!important;animation:none}
 @media (prefers-reduced-motion:reduce){
@@ -3326,13 +3326,13 @@ const Intro = ({ onLeave, onDone }) => {
     timers.current.forEach(clearTimeout);
     timers.current = [
       setTimeout(() => { setOut(true); onLeave(); }, delay),
-      setTimeout(onDone, delay + 1700),
+      setTimeout(onDone, delay + 1400),
     ];
   };
   useEffect(() => {
     const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) { onLeave(); onDone(); return; }
-    leave(3900);
+    leave(3200);
     return () => timers.current.forEach(clearTimeout);
   }, []);
   let k = 0;
@@ -3351,7 +3351,7 @@ const Intro = ({ onLeave, onDone }) => {
           {words.map((w, wi) => (
             <span key={wi}>
               <span className="w">{[...w].map((ch, ci) => (
-                <span key={ci} className="l" style={{ animationDelay: `${1.0 + (k++) * 0.045}s` }}>{ch}</span>
+                <span key={ci} className="l" style={{ animationDelay: `${0.8 + (k++) * 0.04}s` }}>{ch}</span>
               ))}</span>{" "}
             </span>
           ))}
@@ -4556,9 +4556,10 @@ export default function MetaphysicsExplorer() {
   const prevPart = prev && prev.part !== cur.part ? PARTS[prev.part - 1] : null;
 
   return (
-    <div className={"mx" + (introLeaving || !introOn ? "" : " under")}>
+    <>
       <style>{GLOBAL_CSS}</style>
       {introOn && <Intro onLeave={() => setIntroLeaving(true)} onDone={() => setIntroOn(false)} />}
+    <div className={"mx" + (introLeaving || !introOn ? "" : " under")}>
 
       <header className="bar">
         <button className="icon" onClick={() => setDrawerOpen(true)} aria-label="Open contents">☰</button>
@@ -4712,5 +4713,6 @@ export default function MetaphysicsExplorer() {
         </aside>
       )}
     </div>
+    </>
   );
 }
