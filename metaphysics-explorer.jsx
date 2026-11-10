@@ -275,6 +275,7 @@ One qualification matters as much as the principle itself, and the source of thi
 const hardEmpData = {
   color:C.hardEmp, bg:BG.hardEmp,
   title:"Hard Empiricism: Materialism, Natural Reductionism, Anti-Dualism",
+  intro:"Explains \"hard empiricism\" — the belief that only physical, testable things are real — and shows, using its own internal logic, that this belief cannot justify itself without quietly assuming things (like the reliability of reason itself) that are not physical or testable.",
   sections:[
     { id:"core", label:"The Core Claim and Its Self-Refutation", body:`Hard empiricism is the view that the physical world is all there is, that our senses are the supreme guide to grasping the structures of reality, and that anything which cannot be observed through empirical methodologies can be safely assumed to be absent from the ontological plane. In its strongest form — the form that operates as the default epistemology of modern secular institutions — it constructs ontology (what exists) through epistemology (what can be known by the senses). This is a peculiar philosophical move: instead of first asking what exists and then asking how we can know it, hard empiricism starts with its preferred method of knowing and declares that whatever that method cannot access, does not exist.
 
@@ -323,6 +324,7 @@ The west is struggling with consciousness because it started from the wrong onto
 const immanentismData = {
   color:C.immanentism, bg:BG.immanentism,
   title:"Immanentism: The Closed World, Deism, and the Faith-Law Bifurcation",
+  intro:"Defines \"immanentism\" — treating this physical, observable world as the only reality there is — and traces its history from deism (a God who starts the universe, then steps back) to today's fully closed, self-contained secular worldview.",
   sections:[
     { id:"core", label:"The Core Claim", body:`Immanentism is the belief that all values, meanings, laws, and axioms that govern the natural world — or that ought to govern it — are contained within it, with little or no reference to anything transcendent. The world is a closed, self-governing system. Whatever humans need to live, sustain themselves, and develop is already present within the confines of the natural world and in our minds as they relate to that world. The transcendent, if it exists at all, is decorative — it initiated things, perhaps, but it does not interfere.
 
@@ -375,6 +377,7 @@ When the essay describes the modern west's exportation of "human rights discours
 const progressData = {
   color:C.progress, bg:BG.progress,
   title:"Unilinear Progress: Nature-Centred Theology, the Logos, and Materialism as Success",
+  intro:"Examines the modern belief that history moves in one direction, always toward something better, and shows this \"progress narrative\" is a repackaged, secularized version of older Christian ideas about providence and purpose in history, not a neutral observation about how the world works.",
   sections:[
     { id:"core", label:"The Core Claim", body:`The crown jewel of modernity is progress — the idea that human civilization moves through time in one direction, from lower to higher, from primitive to advanced, from pre-modern to modern. The modern west occupies the leading edge of this movement. Every civilization that existed prior to it automatically becomes primitive by comparison. Every contemporary civilization that has not adopted western modernity is behind — stuck in an earlier developmental stage that the west has already passed through on its way to the present.
 
@@ -423,6 +426,7 @@ Breaking out of this framework requires not a different development strategy but
 const natDetData = {
   color:C.natDet, bg:BG.natDet,
   title:"Natural Determinism: Natural Rights, Liberty, Tolerance, and Individualism",
+  intro:"Looks at foundational liberal ideas — natural rights, liberty, tolerance — and shows they originally depended on specific theological assumptions about human beings that have since been quietly dropped, leaving the ideas floating without the foundation that used to hold them up.",
   sections:[
     { id:"core", label:"The Core Claim and Its Groundlessness", body:`Natural determinism is the liberal metaphysical assumption that nature itself has determined certain rights for every human being — that by the very essence of being human, prior to any social arrangement, political authority, or divine revelation, each person possesses certain inalienable rights. These rights are not granted by governments. They are not derived from divine command. They are simply there, written into human nature itself — self-evident truths that any rational person can recognize by consulting their own reason or the natural order.
 
@@ -478,10 +482,6 @@ const genealogyData = {
   color:C.genealogy, bg:BG.genealogy,
   title:"The Intellectual Genealogy of Western Modernity",
   subtitle:"How particular historical contingencies became 'universal reason'",
-  intro:"Looks at foundational liberal ideas — natural rights, liberty, tolerance — and shows they originally depended on specific theological assumptions about human beings that have since been quietly dropped, leaving the ideas floating without the foundation that used to hold them up.",
-  intro:"Examines the modern belief that history moves in one direction, always toward something better, and shows this \"progress narrative\" is a repackaged, secularized version of older Christian ideas about providence and purpose in history, not a neutral observation about how the world works.",
-  intro:"Defines \"immanentism\" — treating this physical, observable world as the only reality there is — and traces its history from deism (a God who starts the universe, then steps back) to today's fully closed, self-contained secular worldview.",
-  intro:"Explains \"hard empiricism\" — the belief that only physical, testable things are real — and shows, using its own internal logic, that this belief cannot justify itself without quietly assuming things (like the reliability of reason itself) that are not physical or testable.",
   intro:`Western modernity did not emerge from pure reason operating in a vacuum. It emerged from a very specific sequence of historical events, theological crises, political conflicts, and intellectual responses — each building on the last, each leaving traces in the conceptual architecture of what eventually called itself the universal, neutral, rational worldview. Understanding this genealogy is not debunking but intellectual hygiene: it shows that what claims to be universal has a particular origin, and what claims to be necessary was contingent at every step.`,
   periods:[
     {
@@ -720,6 +720,7 @@ The same analysis applies with full force to secular liberalism. When liberalism
 };
 
 const chainData = {
+  title:"From Reality to Politics",
   layers:[
     { id:"onto", symbol:"Ω", color:"#c8a96e", label:"ONTOLOGY", q:"What exists?", parent:"Part of Metaphysics", note:"Your most basic assumption about what kind of thing the universe is. Materialism → everything downstream is shaped by that. Tawhid → everything downstream is shaped by that instead. The choice here is not optional — everyone makes it." },
     { id:"epist", symbol:"◉", color:"#7eb8c9", label:"EPISTEMOLOGY", q:"How do we know?", parent:"Flows from Ontology", note:"If only matter exists, only empirical methods are valid. If revelation is real, it is a genuine epistemic source. Your ontology determines what counts as evidence before a single experiment is run." },
@@ -754,6 +755,7 @@ const chainData = {
 const islamData = {
   color:C.islam, bg:BG.islam,
   title:"Islam as Meta-Theory: Reclaiming the Centre Stage",
+  intro:"Argues that Islam should be treated as a full, competing account of reality in its own right — with its own answers to what exists, how we know it, and what matters — rather than being placed as one more item to be judged and explained by the secular Western framework.",
   sections:[
     { id:"claim", label:"The Claim and Its Precondition", body:`The essay's conclusion makes a bold claim that must be read with philosophical precision: Islam is itself a meta-worldview — not in the sense that western modernity claims to be meta (transcending all particular commitments through neutral reason), but in a more fundamental sense: it operates from the most meta authority possible, the transcendent divine. If the divine is real and has spoken, then the divine perspective is genuinely and irreducibly meta — not because it is one human reason that has outcompeted others, but because it originates from beyond the horizontal plane of competing worldviews altogether.
 
@@ -809,7 +811,6 @@ const ebionitesData = {
   title:"The Earliest Jesus Movement: Ebionites, Adoptionism, and the Islamic Christology",
   subtitle:"What mainstream historians — including committed Trinitarian scholars — have found beneath later doctrine, and why it converges with the Quran's account of 'Isa",
   intro:"A history-of-early-Christianity deep dive: introduces the Ebionites, an early Jewish-Christian group who saw Jesus as a human prophet rather than God incarnate, and traces how this view was pushed to the margins by the fourth century in favor of the Trinitarian doctrine that later became mainstream Christian orthodoxy.",
-  intro:"Argues that Islam should be treated as a full, competing account of reality in its own right — with its own answers to what exists, how we know it, and what matters — rather than being placed as one more item to be judged and explained by the secular Western framework.",
   sections:[
     { id:"diversity", label:"The Diversity the Historical Record Actually Shows", body:`There is a popular assumption, held by believers and skeptics alike, that Christianity possessed a single, settled orthodoxy from the very beginning — that everyone agreed on who Jesus was, what the Trinity meant, and what scripture said — and that real doctrinal fracture only began with the Reformation in the fifteenth and sixteenth centuries. Historians who have actually examined the surviving first- and second-century evidence have found something closer to the opposite. The range of belief among people who called themselves followers of Jesus in the first two centuries was, by several serious scholarly accounts, considerably wider than the range found across mainstream Christian denominations today.
 
@@ -967,14 +968,38 @@ const Analogies = ({ analogies, color }) => (
   </div>
 );
 
-const SectionHeader = ({ color, pre, title, sub }) => (
+const SectionHeader = ({ color, pre, title, sub }) => {
+  const tid = React.useContext(TabCtx);
+  const meta = tid ? tabMeta(tid) : null;
+  return (
   <div style={{ margin:"6px 0 26px" }}>
     {pre && <div style={{ fontSize:"11.5px", fontStyle:"italic", letterSpacing:"0.3px", color, opacity:0.9, marginBottom:"10px", lineHeight:1.5 }}>{pre}</div>}
     <h2 style={{ margin:0, fontFamily:FONT_D, fontSize:"clamp(30px,6vw,44px)", fontWeight:400, lineHeight:1.1, color:"#efe8d8" }}>{title}</h2>
     <div style={{ width:"44px", height:"2px", background:color, margin:"16px 0 12px", opacity:0.8 }} />
+    {meta && (
+      <div style={{ display:"flex", alignItems:"center", flexWrap:"wrap", gap:"6px 16px", margin:"0 0 14px", fontSize:"12.5px", color:"#8a8474" }}>
+        {meta.level > 0 && (
+          <span style={{ display:"inline-flex", alignItems:"center", gap:"8px" }} title={`Difficulty: ${meta.levelName}`}>
+            <span style={{ display:"inline-flex", gap:"3px" }}>
+              {[1,2,3].map(i => <i key={i} style={{ width:"7px", height:"7px", borderRadius:"4px", border:`1px solid ${color}`, background: i <= meta.level ? color : "transparent" }} />)}
+            </span>
+            {meta.levelName}
+          </span>
+        )}
+        {meta.level === 0 && <span>Reference</span>}
+        <span>{meta.mins} min read</span>
+      </div>
+    )}
     {sub && <p style={{ margin:0, fontFamily:FONT_B, fontSize:"14px", fontStyle:"italic", color:"#8a8474", lineHeight:1.7 }}>{sub}</p>}
+    {meta && meta.brief && (
+      <Card bg="#0e0e10" border={`${color}33`} borderLeft={`2px solid ${color}`} style={{ margin:"20px 0 0" }}>
+        <div style={{ fontFamily:FONT_D, fontSize:"18px", fontStyle:"italic", color, marginBottom:"6px" }}>In brief</div>
+        <div style={{ fontFamily:FONT_B, fontSize:"15px", lineHeight:1.8, color:"#c9c1af" }}>{meta.brief}</div>
+      </Card>
+    )}
   </div>
-);
+  );
+};
 
 const TabIntro = ({ text, color }) => (
   <Card bg="#0c0c0d" border={`${color}2a`} borderLeft={`2px solid ${color}`}
@@ -3161,9 +3186,10 @@ const PARTS = [
   { n:7, title:"Library",                blurb:"Sources and further reading." },
 ].map(p => ({ ...p, ids: NAV.filter(n => n.part===p.n).map(n => n.id), color: (NAV.find(n => n.part===p.n)||{}).color || "#d4a843" }));
 const ROMAN = ["I","II","III","IV","V","VI","VII"];
+const TITLE_OVERRIDE = { religion:"Din as Operating System", inversion:"The Inversion Problem", erasure:"The Erased 700 Years", bibliography:"Bibliography" };
 const tabName = n => {
   const d = DATA_INDEX[n.id];
-  let t = d && d.title ? String(d.title).split(":")[0].trim() : "";
+  let t = TITLE_OVERRIDE[n.id] || (d && d.title ? String(d.title).split(":")[0].trim() : "");
   if (!t) return n.label;
   return t.length > 34 ? t.slice(0,32).trimEnd() + "…" : t;
 };
@@ -3226,6 +3252,7 @@ html,body{background:#0b0b0d}
 .di{display:flex;align-items:baseline;gap:12px;width:100%;padding:9px 22px;background:none;border:0;border-left:2px solid transparent;text-align:left;cursor:pointer;font-size:13.5px;color:#b3ab98;transition:background .15s}
 .di:hover{background:#151518}
 .di.on{border-left-color:var(--c);color:var(--c);background:#131316}
+.di{align-items:flex-start}.di .dt{display:flex;flex-direction:column;gap:2px}.di .dt small{font-size:11px;color:#6a665a}
 .di .no{width:22px;flex-shrink:0;font-size:11px;color:#5d594d;font-variant-numeric:tabular-nums}
 .di .rd{margin-left:auto;font-size:10.5px;color:#6a665a;flex-shrink:0}
 .di .rd.full{color:#7fbf7f}
@@ -3574,6 +3601,74 @@ const _setHL = (all, cur) => {
   } catch (e) {}
 };
 const _clearHL = () => { try { CSS.highlights.delete("mxhit"); CSS.highlights.delete("mxcur"); } catch (e) {} };
+
+// ═══════════════════════════════════════════════════════════════
+// TOPIC META — one-paragraph takeaway, difficulty level, computed reading time.
+// Takeaways summarise each topic's own claims; they add no new content to the topics themselves.
+// ═══════════════════════════════════════════════════════════════
+const TabCtx = React.createContext(null);
+const LEVEL_NAME = ["Reference", "Beginner", "Intermediate", "Advanced"];
+const TOPIC_META = {
+  glossary:{ l:1, b:"Four plain-language ideas carry everything that follows: metaphysics (what is ultimately real), worldview, paradigm, and plausibility structure. Every system of thought, including a scientific one, rests on starting assumptions that cannot be proven from inside it. The term index at the end links each recurring term to the topic that treats it in depth." },
+  metadetect:{ l:1, b:"No field of thought escapes metaphysics: science, politics, economics and everyday opinion all rest on assumptions about what is real. Every attempt to abolish metaphysics smuggles in one of its own. Three tests and a claim classifier help you spot hidden metaphysical claims in anything you read." },
+  mwt:{ l:2, b:"Argues that modern secular Western culture is one worldview among many, not the neutral default. Its starting assumptions cannot be proven, and its claim to stand above other worldviews is itself a worldview claim. Two case studies (Davutoğlu and Trueman) compare the Western and Islamic paradigms." },
+  hardEmp:{ l:2, b:"Hard empiricism holds that only physical, testable things are real. The argument here is that this claim cannot itself be tested, so it depends on assumptions, such as the reliability of reason, that it cannot justify. It also covers what the view leaves unexplained: consciousness and inherent value." },
+  scientism:{ l:1, b:"Separates science, a method for studying the physical world, from scientism, the belief that this method is the only route to truth. Logical positivism, the movement that tried hardest to prove scientism, was abandoned by its own philosophers. Its slogans live on in popular culture anyway." },
+  scilimits:{ l:2, b:"Every science takes things for granted that it cannot itself explain. Even physics presupposes that laws exist and that mathematics works. That raises the question of which kind of knowledge sits at the top of the chain of assumptions, and includes Wolfgang Smith’s critique of the ‘bifurcation of nature’." },
+  immanentism:{ l:2, b:"Immanentism treats the observable world as the only reality. The topic traces it through a Christian genealogy (faith versus law), deism’s absentee God, and the secular state as a metaphysical entity in its own right." },
+  progress:{ l:2, b:"The belief that history moves steadily toward something better is presented as a secularised version of older Christian ideas of providence, not a neutral observation. Covers al-Attas’ critique (progress without a destination) and the progress narrative as colonial ideology." },
+  natDet:{ l:2, b:"Liberal ideas such as natural rights, liberty and tolerance originally rested on specific theological views of the human person. Those foundations were dropped while the ideas stayed, leaving them without grounding. Covers the equality paradox, Brad Gregory’s argument, and the tolerance paradox." },
+  chain:{ l:1, b:"Shows how views descend in layers: beliefs about what exists shape beliefs about knowledge, then value, then ethics, then politics. So an argument about policy is often a disagreement several layers further down. Useful as a map for the rest of the app." },
+  genealogy:{ l:2, b:"Argues that modern Western thought has a particular history of theological crises, conflicts and responses, rather than arising from pure reason in a vacuum. Tracing that origin is framed as intellectual hygiene, not debunking: what claims to be universal has a particular origin." },
+  spiker:{ l:3, b:"Describes five historical splits in Western thought: law from spirit, spiritual from temporal power, faith from reason, the natural world from the knowing subject, and morality from ontology. The argument is that each looked like progress but broke a whole into two pieces that no longer fit together. Based on Hasan Spiker’s book." },
+  inversion:{ l:2, b:"Flipping a metaphysical claim to its opposite does not escape metaphysics: ‘there is no God’ is as much a metaphysical claim as ‘there is a God.’ ‘Anti-metaphysical’ positions occupy the same throne from the other side. The topic illustrates this with the image of a new king in the old palace and with woke and anti-woke culture." },
+  mythviolence:{ l:2, b:"Challenges the claim that religion is uniquely responsible for violence. Following William Cavanaugh, it argues the line between ‘religious’ and ‘secular’ violence launders secular violence, and treats the nation-state as a sacred institution. It also asks why Islam is the specific target." },
+  nihilism:{ l:2, b:"Nietzsche’s ‘God is dead’ is a warning about the vacancy left when a culture’s shared belief in God erodes, not a celebration. Modern culture kept the moral furniture and discarded the house. What Nietzsche actually proposed in its place is something almost no one wants." },
+  postmodern:{ l:2, b:"Lyotard’s claim that there are no grand narratives is itself a grand narrative, so it undercuts itself the moment it is stated. The topic asks whose metanarratives get the sceptical treatment and which are spared, and what the critique leaves standing." },
+  orientalism:{ l:2, b:"Following Edward Said, it traces how Western scholarship depicted the East as backward, and how that shaped portrayals of the Prophet Muhammad and Islam. It roots the pattern in a millennium of geopolitical rivalry that secular Europe inherited from Christian Europe, and argues the prejudice lingers today." },
+  erasure:{ l:1, b:"Western philosophy courses usually jump from Aristotle to Aquinas, skipping roughly 700 years. In that gap, Islamic civilisation preserved, translated and extended Greek thought and built new philosophy and science that later Europe depended on. This topic fills in the missing period." },
+  colonialep:{ l:2, b:"Argues that colonialism’s deepest effect was epistemological: it changed how colonised peoples think, categorise knowledge and see themselves, and this outlasted political independence. Macaulay’s 1835 minute is the case study of education as replacement. Ends with concrete steps toward recovery." },
+  epistemsov:{ l:3, b:"A civilisation must control the categories it uses to know, not only its politics and economy, or others author its self-understanding. Applies this to the Muslim world’s relationship with Western academia, and gives postcolonial theory a real but limited role. Draws on Joseph Lumbard." },
+  hallaq:{ l:3, b:"Summarises two books by Wael Hallaq: one arguing that Said’s critique of Orientalism did not go far enough, the other arguing that the modern nation-state’s structure makes an ‘Islamic state’ a contradiction in terms. Includes his sultan and ‘ulama separation and a section on reception and pushback." },
+  goodhuman:{ l:1, b:"‘I’m not religious, I’m just a good person’ has a hidden premise: there is no worldview-free meaning of ‘good.’ Every notion of goodness carries an unstated adverb, such as secularly good, Islamically good or Christianly good. This topic makes that modifier visible." },
+  tropes:{ l:1, b:"Nineteen everyday phrases, such as ‘that’s just your opinion,’ sound like common sense. Each is unpacked to show the unexamined metaphysical claim inside it. Use it as a quick reference when a conversation gets stopped by one." },
+  notneutral:{ l:2, b:"Starting from what ‘value’ means, shows that calling something value-neutral usually hides a specific value choice. Covers Hume’s fact/value gap, Weber’s value-freedom and the neutral-tool myth, then applies the point to institutions: bureaucracy, law, money, curriculum and metrics." },
+  metasoc:{ l:3, b:"A 2014 lecture by Karim Lahham arguing that sociology presents itself as value-free while assuming answers about what a human being and a society are. Every science depends on first principles that come from philosophy. Draws on Ibn Sina, Comte, Durkheim and the Vienna Circle." },
+  psychology:{ l:2, b:"Traces the self’s redefinition from political to religious to economic to psychological being, drawing on Philip Rieff. When inner feelings become the highest good, moral language is psychologised and the therapist becomes a functional priest. What is lost is a view of the self from outside." },
+  secsacred:{ l:2, b:"Secular society did not eliminate ritual, sacred symbols and sacrifice; it moved them onto the nation, sport, the market and the university, often while denying it. The topic walks through each as a substitute religious system." },
+  democracy:{ l:2, b:"‘Democracy’ and ‘freedom’ are procedural containers that need a worldview to fill them, so two democracies can pursue opposite visions of the good life. Compares three rival definitions of freedom and reads the culture wars as a metaphysical civil war, with Lindbom’s The Myth of Democracy as a case study." },
+  economics:{ l:2, b:"Argues that economics, presented as neutral mathematics, carries its own theology: homo economicus as an anthropology, GDP growth as an end goal, the invisible hand as providence. It closes with an Islamic alternative that sets justice (adl) alongside efficiency." },
+  technology:{ l:1, b:"Technologies carry the values of their designers, shown through a bridge, a tomato-picking machine and a recommendation algorithm. The topic extends this to algorithmic curation, transhumanism as a rival eschatology, and AI alignment as a metaphysical problem." },
+  aesthetics:{ l:2, b:"Asks whether beauty is an objective order or personal taste, and traces the modern West’s shift from the first view to the second. Covers modern art’s turn away from representation and Islamic aesthetics as tawhid made visible." },
+  genderfamily:{ l:2, b:"Debates about gender and family are disputes between two starting pictures of the human being: the self-defining individual and the person with given roles inside a family. Covers both paradigms, Abigail Favale’s The Genesis of Gender, and family as a sacred-social unit versus a contract." },
+  atheism:{ l:1, b:"Covers the rise of New Atheism (Dawkins, Hitchens, Harris, Dennett) and why even secular critics say it produced rigid dogmas instead of open rationality. Adds the ‘default liberal’ problem and compares an Islamic relationship to reason." },
+  theolzionism:{ l:2, b:"Traces the religious history of Zionism as a rupture within Judaism that many Orthodox authorities opposed on religious grounds. Covers Rabbi Kook and religious Zionism, the invention of Christian dispensationalist Zionism, and the structural pattern shared across traditions." },
+  religion:{ l:1, b:"Explains din, usually mistranslated as ‘religion.’ Modern ‘religion’ is one private compartment alongside politics and economics; din is a single total orientation that governs all of them. Covers how the word ‘religion’ was invented and what that invention destroyed." },
+  fitra:{ l:1, b:"Fitra is the Islamic idea of an innate human orientation toward recognising God and basic moral truth. It answers a simple puzzle: why do people everywhere recognise some right and wrong without formal teaching? Covers the Covenant of Alast, how modernity suppresses fitra, and recovery." },
+  islam:{ l:2, b:"Argues Islam should be treated as a full, competing account of reality, with its own answers on what exists, how we know and what matters, and not as one item for a secular framework to judge. Covers tawhid as total ontology, the khalifa and insan al-kamil, and the mutual-exclusivity argument, with Gai Eaton’s book as the case study." },
+  ebionites:{ l:2, b:"A history of the Ebionites, an early Jewish-Christian group who saw Jesus as a human prophet. Drawing on James D.G. Dunn, it traces how that view was pushed out by the fourth century in favour of the Trinity, and argues the earliest view converges with Islamic Christology." },
+  metaorder:{ l:3, b:"Frames tawhid as refusing to let anything else (nation, ideology, market, self) occupy the place only God should hold, making Islam a standing act of resistance to rival authorities. Covers al-dunya as meta-order, fetishization, and neoliberalism as a case study. Draws on Ali Harfouch." },
+  freewill:{ l:2, b:"Compares the Western free will debate (compatibilism, libertarianism, hard determinism) with the classical Islamic debate on qadar, which holds that God ordains everything while humans remain responsible. Covers the two-level distinction in qadar, qadar as explanation rather than excuse, and Sartre against the Qur’anic account." },
+  pyrrhonian:{ l:3, b:"Names a common move: demanding proof of God while exempting one’s own starting assumptions from the same standard. Introduces properly basic beliefs, which are reasonable to hold without outside proof. Draws on al-Ghazali, Ibn Taymiyyah and Dr. Nazir Khan." },
+  usulfiqh:{ l:1, b:"A plain-language walkthrough of how Islamic law and ethics are derived from the Quran and Sunnah. Covers the sources (Quran, Sunnah, ijma, qiyas), the maqasid, the four Sunni madhabs, and ijtihad versus taqlid. Presents it as a rigorous discipline with its own internal logic." },
+  akbarethics:{ l:3, b:"Introduces Ibn ‘Arabi’s view that good and evil concern how real a thing is: the more real one is, the less evil one becomes. Also critiques modern meta-ethics (Moore, Stevenson, Kant) for failing to settle what ‘good’ means. Covers adab and the divine names. Draws on Karim Lahham." },
+  anjumethics:{ l:2, b:"Argues, drawing on Ovamir Anjum, that being a ‘good person’ by your own standard is not enough, because the meaning of ‘good’ is being reshaped by powerful global actors, and the human moral sense, though real, needs revelation to be completed. Engages MacIntyre and Weber." },
+  muslimschiz:{ l:2, b:"Describes the bind of defending Islam in the vocabulary of the civilisation that colonised it, which reinforces that framework as the default. Looks at apologetic Islam, two failed responses (online influence and neo-trad LARP), and the proposed way out through epistemological decolonisation." },
+  reform:{ l:2, b:"Examines calls for an Islamic Reformation modelled on the Protestant one and asks whether the comparison holds, given how differently authority, scripture and law work in Islam. Covers Islam’s own mechanisms for change and the political function of the demand." },
+  iqbal:{ l:3, b:"Muhammad Iqbal reconstructed Islamic thought from within, using tools from Western philosophy to strengthen rather than replace the Islamic framework. Covers khudi against liberal individualism, time and finitude as an alternative to progress, and the limits of the project." },
+  bibliography:{ l:0, b:"A reference list of every book, paper and thinker cited in the app, grouped by theme with a note on why each matters. Tap an entry to jump to the topic where it is discussed." },
+};
+const _mins = {};
+const readMinutes = id => {
+  if (_mins[id] != null) return _mins[id];
+  const b = []; _collect(DATA_INDEX[id], "", b);
+  const words = b.reduce((n, x) => n + x[1].split(/\s+/).length, 0);
+  return (_mins[id] = Math.max(1, Math.round(words / 220)));
+};
+const tabMeta = id => {
+  const m = TOPIC_META[id] || {};
+  return { level:m.l || 0, levelName:LEVEL_NAME[m.l || 0], brief:m.b || "", mins:readMinutes(id) };
+};
 
 export default function MetaphysicsExplorer() {
   const [active, setActive] = useState("glossary");
@@ -4205,17 +4300,7 @@ export default function MetaphysicsExplorer() {
     const go = id => { const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:"smooth",block:"start"}); };
     return (
       <div>
-        <div style={{ marginBottom:"18px" }}>
-          <div style={{ fontSize:"10px", letterSpacing:"3px", color:c, marginBottom:"4px" }}>
-            EVERYDAY PHRASES THAT DON'T SURVIVE SCRUTINY
-          </div>
-          <h2 style={{ margin:0, fontSize:"21px", fontWeight:"normal", color:"#e8e0d0", letterSpacing:"1px" }}>
-            {tropeData.title}
-          </h2>
-          <p style={{ margin:"5px 0 0", fontSize:"12px", color:"#666" }}>
-            {tropeData.subtitle}
-          </p>
-        </div>
+        <SectionHeader color={c} pre="EVERYDAY PHRASES THAT DON'T SURVIVE SCRUTINY" title={tropeData.title} sub={tropeData.subtitle} />
 
         <TabIntro color={c} text="A quick-reference tab: short, everyday phrases people use as conversation-stoppers ('that's just your opinion,' 'who's to say what's right') — each one unpacked to show the hidden, unexamined metaphysical claim it's actually smuggling in." />
 
@@ -4578,7 +4663,7 @@ export default function MetaphysicsExplorer() {
           <div className="crumb" style={{ "--c": cur.color }}>
             Part {ROMAN[cur.part - 1]}, <b>{part.title}</b>. Topic {posInPart} of {part.ids.length}.
           </div>
-          {RENDER[active] && RENDER[active]()}
+          <TabCtx.Provider value={active}>{RENDER[active] && RENDER[active]()}</TabCtx.Provider>
 
           <nav className="pn" aria-label="Previous and next topic">
             {prev && (
@@ -4616,7 +4701,7 @@ export default function MetaphysicsExplorer() {
                 return (
                   <button key={id} className={"di" + (id === active ? " on" : "")} style={{ "--c": n.color }} onClick={() => go(id)}>
                     <span className="no">{NAV.indexOf(n) + 1}</span>
-                    <span>{tabName(n)}</span>
+                    <span className="dt">{tabName(n)}<small>{tabMeta(id).level > 0 ? tabMeta(id).levelName + " · " : ""}{tabMeta(id).mins} min</small></span>
                     {total > 0 && <span className={"rd" + (rn === total ? " full" : "")}>{rn === total ? "✓" : `${rn}/${total}`}</span>}
                   </button>
                 );
